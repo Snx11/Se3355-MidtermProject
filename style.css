@@ -28,7 +28,7 @@ h3 {
   padding: 1rem 0;
 }
 
-/* Kutuları sıralayan container */
+
 .quick-links-flex {
   display: flex;
   flex-wrap: wrap;
@@ -36,7 +36,6 @@ h3 {
   gap: 12px;
 }
 
-/* Kart tasarımı */
 .quick-link-card {
   width: 115px;
   background: linear-gradient(to bottom, #000 0%, #ff6600 100%);
@@ -76,7 +75,6 @@ h3 {
   font-weight: 400;
 }
 
-/* Carousel görsellerinin boyutunu küçültme */
 .carousel-inner img {
   height: 300px;
   object-fit: cover;
@@ -101,7 +99,7 @@ h3 {
   transform: scale(1.03);
 }
 
-/* Elektronik Fırsatlar görsellerinin boyutunu küçültme */
+
 #electronics-container .electronic-card img {
   max-height: 180px;
   width: auto;
@@ -109,14 +107,12 @@ h3 {
   object-fit: contain;
 }
 
-/* Sana Özel Öneriler görsellerinin boyutunu küçültme */
 #suggestions-container .card img {
   height: 180px;
   object-fit: contain;
   padding: 10px;
 }
 
-/* Kart boyutlarını düzenleme */
 #suggestions-container .card {
   margin-bottom: 20px;
   border-radius: 12px;
@@ -134,7 +130,7 @@ h3 {
   font-size: 1.2rem;
 }
 
-/* Mega Menü */
+
 .mega-menu {
   display: none;
   position: absolute;
@@ -173,7 +169,6 @@ h3 {
   vertical-align: middle;
 }
 
-/* Mobil görünüm için mega menü düzenlemeleri */
 @media (max-width: 991.98px) {
   .mega-menu {
     position: static;

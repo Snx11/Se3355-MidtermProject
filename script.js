@@ -1,4 +1,4 @@
-// QUICK LINKS
+
 fetch("https://run.mocky.io/v3/308ae078-3a0d-4326-a7f4-dda6e7b26d45")
   .then((res) => res.json())
   .then((data) => {
@@ -17,7 +17,7 @@ fetch("https://run.mocky.io/v3/308ae078-3a0d-4326-a7f4-dda6e7b26d45")
     })
   })
   .catch((err) => console.error("Quick Links verisi alınamadı:", err))
-// SLIDER
+
 fetch("https://run.mocky.io/v3/4df65b14-b0ec-41fa-ae3a-f9cb6b616e81")
   .then((res) => res.json())
   .then((data) => {
@@ -36,7 +36,7 @@ fetch("https://run.mocky.io/v3/4df65b14-b0ec-41fa-ae3a-f9cb6b616e81")
   })
   .catch((err) => console.error("Slider verisi alınamadı:", err))
 
-// ELEKTRONİK FIRSATLAR - Slider'ın sağında dönen 1 ürün
+
 let electronicsIndex = 0
 let electronicsData = []
 
@@ -45,7 +45,7 @@ fetch("https://run.mocky.io/v3/ff401c6f-9986-4b5b-ac5d-b229844f10e6")
   .then((data) => {
     electronicsData = data
     showElectronicsDeal()
-    setInterval(showElectronicsDeal, 3000) // Her 3 saniyede bir göster
+    setInterval(showElectronicsDeal, 3000) 
   })
   .catch((err) => console.error("Elektronik verisi alınamadı:", err))
 
@@ -64,7 +64,7 @@ function showElectronicsDeal() {
   electronicsIndex = (electronicsIndex + 1) % electronicsData.length
 }
 
-// SANA ÖZEL ÖNERİLER
+
 fetch("https://run.mocky.io/v3/4abcb84e-e2ed-406a-a830-c9e87d9cc25c")
   .then((res) => res.json())
   .then((data) => {
@@ -88,45 +88,45 @@ fetch("https://run.mocky.io/v3/4abcb84e-e2ed-406a-a830-c9e87d9cc25c")
   })
   .catch((err) => console.error("Sana Özel ürün verisi alınamadı:", err))
 
-// Dropdown menü işlevselliği - Hem hover hem de click için destek
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Hover işlevselliği (büyük ekranlar için)
+  
   const dropdowns = document.querySelectorAll(".nav-item.dropdown")
 
   dropdowns.forEach((dropdown) => {
     dropdown.addEventListener("mouseenter", function () {
       if (window.innerWidth >= 992) {
-        // Sadece büyük ekranlarda hover
+
         this.querySelector(".mega-menu").style.display = "block"
       }
     })
 
     dropdown.addEventListener("mouseleave", function () {
       if (window.innerWidth >= 992) {
-        // Sadece büyük ekranlarda hover
+       
         this.querySelector(".mega-menu").style.display = "none"
       }
     })
   })
 
-  // Mobil görünümde dropdown'ların düzgün çalışması için
+  
   const dropdownToggleLinks = document.querySelectorAll(".dropdown-toggle")
 
   dropdownToggleLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       if (window.innerWidth < 992) {
-        // Sadece mobil görünümde
+    
         e.preventDefault()
         const dropdownMenu = this.nextElementSibling
 
-        // Tüm açık menüleri kapat
+        
         document.querySelectorAll(".dropdown-menu.show").forEach((menu) => {
           if (menu !== dropdownMenu) {
             menu.classList.remove("show")
           }
         })
 
-        // Tıklanan menüyü aç/kapat
+       
         dropdownMenu.classList.toggle("show")
       }
     })
