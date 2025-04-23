@@ -1,0 +1,21 @@
+mock API linklerini not etmek için
+
+Turuncu kutular için
+
+https://run.mocky.io/v3/8f9f1032-e9a4-4a14-8727-270fa71c991d
+
+Geçişli turuncu kutu deneme
+https://run.mocky.io/v3/6c854937-dfab-4d7f-bf16-eb5e9aa96d73
+
+Ana sliderr
+https://run.mocky.io/v3/4df65b14-b0ec-41fa-ae3a-f9cb6b616e81
+3snn
+https://run.mocky.io/v3/ff401c6f-9986-4b5b-ac5d-b229844f10e6
+
+
+
+yıldızlı ürün 
+https://run.mocky.io/v3/4abcb84e-e2ed-406a-a830-c9e87d9cc25c
+
+mor deneme
+https://run.mocky.io/v3/308ae078-3a0d-4326-a7f4-dda6e7b26d45
